@@ -1,0 +1,151 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+}
+
+/*Header style starts here*/
+body {
+    display:flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: darkslategrey;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+.navigation li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 20px;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.navigation a {
+    height: inherit;
+    width: inherit;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#home-img {
+    height: inherit;
+    width: inherit;
+}
+
+/*Teaser style starts here*/
+.teaser {
+    background-image: url("http://images.huffingtonpost.com/2016-09-22-1474505349-8662319-WebDesign.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+
+#teaser-text {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 25%;
+    width: 60%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#teaser-text h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: darkgreen;
+}
+
+#teaser-text h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: aliceblue;
+}
+
+#teaser-field {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 25%;
+    width: 60%;
+    background-image: -webkit-linear-gradient(#FFD194, #BC1324);
+    border-radius: 25px;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+    opacity: 0.95;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.95; }
+}
+
+.supporting {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: #B0D2D3;
+  border: hidden;
+  overflow:hidden;
+}
+
+.supporting .col {
+  float: left;
+  width: 33%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-top: 15px;
+  /*background-image: -webkit-linear-gradient(#FFD194, #BC1324);*/
+}
+
+.supporting img {
+  height: 32px;
+}
+
+.supporting h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.supporting p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 50px;
+  margin-bottom: 40px;
+}
+
+.btn-default {
+  border: 1px solid #333;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;  
+  display: inline-block;
+  margin-bottom: 20px;      
+}
